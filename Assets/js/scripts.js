@@ -1,12 +1,12 @@
 var time = dayjs().format('H');
-console.log(time);
-var time=8;
+var time = Number(time);
 
 
 //9 am pull value from localStorage
 var storage9AM = localStorage.getItem("nineAM");
 var p9AM = $('.nineAM').find('p')[0];
 $(p9AM).text(storage9AM);
+//9am change class for formatting
 if(time<9){
     $(".nineAM").addClass('future');
 }
