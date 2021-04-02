@@ -1,6 +1,11 @@
 var time = dayjs().format('H');
 var time = Number(time);
 
+var date = dayjs().format("dddd, MMMM D")
+console.log(date)
+currentDay = $("#currentDay");
+console.log(currentDay);
+$(currentDay).text(date);
 
 //9 am pull value from localStorage
 var storage9AM = localStorage.getItem("nineAM");
